@@ -1,4 +1,4 @@
-# Welcome to Awesome Lattice!
+# Welcome to LaWiki!
 
 ```{tableofcontents}
 ```

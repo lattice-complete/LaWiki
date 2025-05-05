@@ -1,0 +1,23 @@
+version: 1
+project:
+  title: LaWiki
+  subtitle: A Wiki for Lattice Mathematics & Cryptography
+  short_title: LaWiki
+  description: A Wiki for Lattice Mathematics & Cryptography
+  authors:
+    - name: Kurt Pan
+  github: executablebooks/jupyter-book
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - file: AwesomeLattice.md
+site:
+  options:
+    logo: logo.png
+    folders: true
+  template: book-theme

@@ -26,6 +26,7 @@ A curated list of awesome resources for learning and using lattice-based cryptog
 
 | Title                                                                 | Time      | Authors/Team        | URL                                                                                                |
 | :-------------------------------------------------------------------- | :-------- | :------------------ | :------------------------------------------------------------------------------------------------- |
+|**Prepping for post-quantum: a beginner’s guide to lattice cryptography**|2025|Cloudflare|[Link](https://blog.cloudflare.com/lattice-crypto-primer/)|
 | **Chris Peikert's Blog (Lattice-Based Crypto Posts)**                     | Various   | Chris Peikert       | [Link](https://web.eecs.umich.edu/~cpeikert/pubs/) (Check publications/talks section)              |
 | **Vadim Lyubashevsky's Publications/Talks**                               | Various   | Vadim Lyubashevsky  | [Link](https://www.vadim.lyubashevsky.org/publications.html)                                       |
 | **Windows on Theory (Blog posts on LWE, etc.)**                           | Various   | Various (e.g., Oded Regev) | [Link](https://windowsontheory.org/tag/lattices/)                                                  |

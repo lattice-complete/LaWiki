@@ -160,3 +160,28 @@
   isbn      = {978-1-4615-0897-7},
   url       = {https://doi.org/10.1007/978-1-4615-0897-7}
 }
+
+
+@misc{Neo,
+      author = {Wilson Nguyen and Srinath Setty},
+      title = {Neo: Lattice-based folding scheme for {CCS} over small fields and pay-per-bit commitments},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/294},
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/294}
+}
+
+@inproceedings{HyperNova,
+author = {Kothapalli, Abhiram and Setty, Srinath},
+title = {HyperNova: Recursive Arguments for&nbsp;Customizable Constraint Systems},
+year = {2024},
+isbn = {978-3-031-68402-9},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-68403-6_11},
+doi = {10.1007/978-3-031-68403-6_11},
+abstract = {We introduce HyperNova, a new recursive argument for proving incremental computations whose steps are expressed with CCS&nbsp;(Setty et al. ePrint 2023/552), a customizable constraint system that simultaneously generalizes Plonkish, R1CS, and AIR without overheads. HyperNova makes four contributions, each resolving a major problem in the area of recursive arguments.First, it provides a folding scheme for CCS where the prover’s cryptographic cost is a single multi-scalar multiplication (MSM) of size equal to the number of variables in the constraint system, which is optimal when using an MSM-based commitment scheme. The folding scheme can fold multiple instances at once, making it easier to build generalizations of IVC such as PCD. Second, when proving program executions on stateful machines (e.g., EVM, RISC-V), the cost of proving a step of a program is proportional only to the size of the circuit representing the instruction invoked by the program step (“a la carte” cost profile). Third, we show how to achieve zero-knowledge for “free” and without the need to employ zero-knowledge SNARKs: we use a folding scheme to “randomize” IVC proofs. This highlights a new application of folding schemes. Fourth, we show how to efficiently instantiate HyperNova over a cycle of elliptic curves. For this, we provide a general technique, which we refer to as CycleFold, that applies to all modern folding-scheme-based recursive arguments.},
+booktitle = {Advances in Cryptology – CRYPTO 2024: 44th Annual International Cryptology Conference, Santa Barbara, CA, USA, August 18–22, 2024, Proceedings, Part X},
+pages = {345–379},
+numpages = {35},
+location = {Santa Barbara, CA, USA}
+}

@@ -5,11 +5,6 @@
 Neo {cite:p}`Neo` is a recent lattice-based folding scheme for the CCS relation (an NP-complete constraint system generalizing R1CS and AIR).  Its core innovation is a **matrix commitment scheme** based on [Ajtai's commitments](./ajtai.md) {cite:p}`Ajt96`, which is both linearly homomorphic and “pay-per-bit” (the cost scales with the binary size of the message).  Neo's **folding scheme** can be viewed as adapting the folding scheme in HyperNova {cite:p}`HyperNova` to the lattice setting.
 :::
 
-Neo {cite:p}`Neo`
-HyperNova  {cite:p}`HyperNova`
-
-
-
 In Neo, a vector of field elements $z\in\mathbb{F}^m$ is first decomposed into a matrix of small coefficients, then committed via a random matrix.  These homomorphic commitments allow the prover to fold many constraint-checks into one, using a single sum-check invocation over a small prime-field extension.  The following explains the commitment scheme and how it enables the folding (sum-check) protocol.
 
 ### Lattice-Based Matrix Commitment Scheme

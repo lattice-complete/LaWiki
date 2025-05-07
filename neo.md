@@ -35,12 +35,12 @@ The commitment is then:
 -   **Setup:** Sample a random matrix $M\in R_q^{\kappa\times (m)}$ and output public parameters $pp=M$.
 -   **Commit:** To commit to $Z\in\mathbb{F}^{d\times m}$, convert each column of $Z$ into a ring element $z'_i$ as above, form the ring-vector $z'=(z'_1,\dots,z'_m)$, and output
     $$
-    c ;=; M ,z';\in R_q^\kappa.
+    c = M ,z';\in R_q^\kappa.
     $$
 Since each $z'_i$ has “low norm” (its coefficients are small), this binding commitment is secure under LWE/MISIS assumptions.
 
 This scheme is formally an $S$-module homomorphic matrix commitment. In particular, if $\rho_1,\rho_2$ are rotation matrices (elements of the commutative ring $S$) and $Z_1,Z_2$ are two message matrices, the commitments satisfy
-$$\rho_1,\text{Commit}(Z_1) + \rho_2,\text{Commit}(Z_2) ;=; \text{Commit}(,\rho_1 Z_1 + \rho_2 Z_2,)$$
+$$\rho_1,\text{Commit}(Z_1) + \rho_2,\text{Commit}(Z_2) = \text{Commit}(,\rho_1 Z_1 + \rho_2 Z_2,)$$
 ￼. Intuitively, matrix multiplication in the ring distributes over addition.  Equivalently, the commit map $\text{Commit}(Z)=M,\mathrm{cf}^{-1}(Z)$ is linear over this ring.  We will use this to combine commitments in the folding protocol.
 
 ### Homomorphism and Pay-Per-Bit Properties
@@ -48,7 +48,7 @@ $$\rho_1,\text{Commit}(Z_1) + \rho_2,\text{Commit}(Z_2) ;=; \text{Commit}(,\rho_
 The commitment is linearly homomorphic, meaning you can add or scale commitments and it corresponds to adding or scaling the underlying vectors. For example, if $z_1,z_2\in\mathbb{F}_q^m$ and $c_i=\mathrm{Commit}(Z_i)$ are their commitments, then for any scalars $\alpha,\beta\in\mathbb{F}_q$ we have
 $$\alpha,c_1 + \beta,c_2 = \mathrm{Commit}(,\alpha Z_1 + \beta Z_2,),. $$
 In plain terms, $\mathrm{Commit}(z_1)+\mathrm{Commit}(z_2)=\mathrm{Commit}(z_1+z_2)$, etc.  As a concrete toy example in $\mathbb{F}_7^2$: let $z_1=[5,3]$ and $z_2=[2,4]$. Then $z_1+z_2=[7,7]\equiv [0,0]\pmod 7$.  Homomorphism guarantees
-$$\mathrm{Commit}(z_1)+\mathrm{Commit}(z_2) ;=; \mathrm{Commit}([0,0]).$$
+$$\mathrm{Commit}(z_1)+\mathrm{Commit}(z_2) = \mathrm{Commit}([0,0]).$$
 The same combination holds after embedding into matrices and ring elements. This linearity is crucial for folding many constraints into one check.
 
 Another key feature is pay-per-bit cost. The cost of computing $c=Mz'$ scales roughly with the number of nonzero bits in $z'$, i.e. the bit-size of $z$.  In effect, committing small integers is much cheaper than committing large ones.  As the paper notes, “committing to a vector of bits is $32\times$ cheaper than committing to a vector of 32-bit values”.  Intuitively, a ring multiplication $a\cdot b$ only “pays” for the nonzero coefficients of $b$.  For example, consider $z=[1,1]\in\mathbb{F}_7^2$ versus $z=[5,3]$ (which have 1-bit vs 3-bit entries).  The decomp matrix for $[1,1]$ has very few ones, so computing $Mz'$ involves fewer rotations/additions than for $[5,3]$.  This pay-per-bit property can greatly speed up committing sparse or small witnesses.
@@ -87,11 +87,11 @@ Because the commit is homomorphic, we can combine multiple checks into one.  Spe
 1.  **Partial Evaluations:** For each constraint matrix $M_j$, the prover computes the multilinear extension evaluation.  Concretely, pick a random challenge $r\in\mathbb{F}_q^{\log n}$.  Using the decomposed $Z$, compute the partial evaluation vectors $y_j = Z,M_j^T,r \in \mathbb{F}_q^d$.  By the decomposition lemma, the weighted sum of these (according to powers of $b$) reconstructs the evaluation $M_j z$ at $r$.  The prover sends $(r,{y_j})$ as evaluation claims along with $c$.
 2.  **Polynomial Encoding & Sum-Check:** The prover constructs a multivariate polynomial $Q(X)$ that encodes the constraint $f$ and the evaluations $y_j$.  Roughly, $Q$ is designed so that
     $$
-    \sum_{X\in{0,1}^d} Q(X) ;=; f\bigl(M_1 z,\dots,M_t z\bigr),
+    \sum_{X\in{0,1}^d} Q(X) = f\bigl(M_1 z,\dots,M_t z\bigr),
     $$
     by summing over the hypercube of binary vectors.  The verifier and prover engage in the classic sum-check protocol to check this equality.  The sum-check iteratively checks sums over slices of $Q$, and its final output is a claim that
     $$
-    v ;=; Q(r'),
+    v = Q(r'),
     $$
     at a fresh random point $r'\in\mathbb{F}_q^d$.  Intuitively, this single claim replaces the many original checks. (Neo's innovation is that this sum-check is done over a small prime-field extension, unlike prior lattice schemes over cyclotomic rings.)
 3.  **Random Linear Combination:** After sum-check, the prover has a single evaluation claim $v=Q(r')$ and also the original $y_j$ claims (now at point $r'$). These are all linear statements about the committed $Z$.  The prover and verifier then take a random linear combination of all evaluation claims (and of the commitments $c$ themselves).  By Lemma 2 of the paper, this preserves validity: if each individual claim was consistent with some $Z_i$, then a random combination is consistent with $Z = \sum \rho_i Z_i$.  Crucially, the commitment scheme being an $S$-module homomorphism means the combined commitment $c' = \sum \rho_i c_i$ equals $\mathrm{Commit}(Z)$ for the combined witness matrix $Z$.  In other words, many checks on different $Z_i$ are folded into one check on $Z$.

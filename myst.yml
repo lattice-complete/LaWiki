@@ -19,7 +19,7 @@ project:
       output: exports/book.pdf
   toc:
     - file: AwesomeLattice.md
-    - file: ./LaWiki/neo.md
+    - file: neo.md
 site:
   options:
     favicon: logo.png

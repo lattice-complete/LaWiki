@@ -10,6 +10,8 @@ project:
     - Cryptography
   authors:
     - name: Kurt Pan
+      affiliation: ZKPunk
+      email: 0@kurtpan.com
   github: lattice-complete/LaWiki
   bibliography:
     - references.bib
@@ -19,6 +21,8 @@ project:
       output: exports/book.pdf
   toc:
     - file: AwesomeLattice.md
+    - file: ajtai.md
+    - file: greyhound.md
     - file: neo.md
 site:
   options:
@@ -26,4 +30,3 @@ site:
     logo: logo.png
     folders: true
   template: book-theme
-

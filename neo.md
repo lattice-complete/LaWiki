@@ -2,13 +2,13 @@
 
 :::{admonition} Abstract
 :class: note
-Neo {cite:p}`Neo` is a recent lattice-based folding scheme for the CCS relation (an NP-complete constraint system generalizing R1CS and AIR).  Its core innovation is a **matrix commitment scheme** based on [Ajtai's commitments](./ajtai.md) {cite:p}`Ajt96`, which is both linearly homomorphic and “pay-per-bit” (the cost scales with the binary size of the message).  Neo's **folding scheme** can be viewed as adapting the folding scheme in HyperNova {cite:p}`HyperNova` to the lattice setting.
+Neo {cite:p}`Neo` is a recent lattice-based folding scheme for the CCS relation (an NP-complete constraint system generalizing R1CS and AIR).  Its core innovation is a **matrix commitment scheme** based on  @ajtai {cite:p}`Ajt96`, which is both linearly homomorphic and “pay-per-bit” (the cost scales with the binary size of the message).  Neo's **folding scheme** can be viewed as adapting the folding scheme in HyperNova {cite:p}`HyperNova` to the lattice setting.
 :::
 
 In Neo, a vector of field elements $z\in\mathbb{F}^m$ is first decomposed into a matrix of small coefficients, then committed via a random matrix.  These homomorphic commitments allow the prover to fold many constraint-checks into one, using a single sum-check invocation over a small prime-field extension.  The following explains the commitment scheme and how it enables the folding (sum-check) protocol.
 
 ### Lattice-Based Matrix Commitment Scheme
-Neo's commitment scheme builds on **[Ajtai's commitments](./ajtai.md)** {cite:p}`Ajt96`.  In Ajtai's scheme, the $\mathrm{Setup}$ samples a random matrix $M$ over a cyclotomic ring $R_q$, and $\mathrm{Commit}(pp,z)$ outputs $c = M z$ for a low-norm ring-vector $z$.  
+Neo's commitment scheme builds on @ajtai ** {cite:p}`Ajt96`.  In Ajtai's scheme, the $\mathrm{Setup}$ samples a random matrix $M$ over a cyclotomic ring $R_q$, and $\mathrm{Commit}(pp,z)$ outputs $c = M z$ for a low-norm ring-vector $z$.
 
 Neo adapts this to commit field vectors by embedding each scalar into a ring polynomial.
 
@@ -110,6 +110,3 @@ Putting it all together, Neo's folding protocol uses one sum-check over the hype
 :::
 
 Each step leverages the matrix commitment's structure: the homomorphism makes step 4 valid, and pay-per-bit keeps commitment costs low in step 1.  The sum-check step 3 uses standard multilinear sum-check arguments to fold many checks into one.  Altogether, Neo provides a practical folding-friendly protocol: small-field-friendly, post-quantum secure, and efficient when witnesses have low bit-size.
-
-
-

@@ -8,7 +8,7 @@ Neo {cite:p}`Neo` is a recent lattice-based folding scheme for the CCS relation 
 In Neo, a vector of field elements $z\in\mathbb{F}^m$ is first decomposed into a matrix of small coefficients, then committed via a random matrix.  These homomorphic commitments allow the prover to fold many constraint-checks into one, using a single sum-check invocation over a small prime-field extension.  The following explains the commitment scheme and how it enables the folding (sum-check) protocol.
 
 ### Lattice-Based Matrix Commitment Scheme
-Neo's commitment scheme builds on @ajtai ** {cite:p}`Ajt96`.  In Ajtai's scheme, the $\mathrm{Setup}$ samples a random matrix $M$ over a cyclotomic ring $R_q$, and $\mathrm{Commit}(pp,z)$ outputs $c = M z$ for a low-norm ring-vector $z$.
+Neo's commitment scheme builds on @ajtai {cite:p}`Ajt96`.  In Ajtai's scheme, the $\mathrm{Setup}$ samples a random matrix $M$ over a cyclotomic ring $R_q$, and $\mathrm{Commit}(pp,z)$ outputs $c = M z$ for a low-norm ring-vector $z$.
 
 Neo adapts this to commit field vectors by embedding each scalar into a ring polynomial.
 

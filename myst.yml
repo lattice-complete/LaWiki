@@ -21,9 +21,11 @@ project:
       output: exports/book.pdf
   toc:
     - file: AwesomeLattice.md
+    - file: sis.ipynb
     - file: ajtai.md
     - file: greyhound.md
     - file: neo.md
+    - file: lantern.ipynb
 site:
   options:
     favicon: logo.png

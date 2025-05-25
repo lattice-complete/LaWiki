@@ -2,6 +2,8 @@
 ## A Wiki for Lattice Mathematics & Cryptography
 
 ## Log
+- 2025-05-25
+  - try to remove `made with Myst` foot. the "Made with MyST" text is embedded in the [MyST book-theme](https://github.com/myst-templates/book-theme) template's JavaScript files.
 - 2025-05-09
   - learn [Reference using a shorthand @ syntax](https://mystmd.org/guide/cross-references#reference-using-a-shorthand-syntax)
   - support author with affiliation and email

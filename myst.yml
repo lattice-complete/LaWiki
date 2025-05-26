@@ -20,12 +20,12 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
-    - file: AwesomeLattice.md
-    - file: sis.ipynb
-    - file: ajtai.md
-    - file: greyhound.md
-    - file: neo.md
-    - file: lantern.ipynb
+    - file: wiki/AwesomeLattice.md
+    - file: wiki/sis.ipynb
+    - file: wiki/ajtai.md
+    - file: wiki/greyhound.md
+    - file: wiki/neo.md
+    - file: wiki/lantern.ipynb
     - file: wiki/LLL.ipynb
     - file: wiki/LWE.ipynb
 site:

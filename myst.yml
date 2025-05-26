@@ -26,6 +26,8 @@ project:
     - file: greyhound.md
     - file: neo.md
     - file: lantern.ipynb
+    - file: wiki/LLL.ipynb
+    - file: wiki/LWE.ipynb
 site:
   options:
     favicon: logo.png

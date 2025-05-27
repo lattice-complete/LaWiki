@@ -20,6 +20,9 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
+    - file: intro.md
+    - file: wiki/folding.md
+    - file: wiki/pcs.md
     - file: wiki/AwesomeLattice.md
     - file: wiki/sis.ipynb
     - file: wiki/ajtai.md

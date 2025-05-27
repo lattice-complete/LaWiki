@@ -2,6 +2,8 @@
 ## A Wiki for Lattice Mathematics & Cryptography
 
 ## Log
+- 2025-05-27
+  - https://mystmd.org/guide/dropdowns-cards-and-tabs add `intro.md` for cards
 - 2025-05-26
   - add `wiki` folder
   - add `lwe` `lll` pages

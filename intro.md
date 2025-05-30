@@ -5,12 +5,12 @@
 ::: {grid-item-card} 🚀 Get started
 :url: intro
  
-[Get started with LaWiki »](intro)
+[Get started with Awesome Lattice-based Cryptography »](wiki/AwesomeLattice)
 :::
 
 ::: {grid-item-card} 📐 Math & Assumptions
 :url: tutorials/intro
-[See Math & Assumptions »](tutorials/intro)
+[See Math & Assumptions »](wiki/sis.ipynb)
 :::
 
 ::: {grid-item-card} 📁 Folding Schemes

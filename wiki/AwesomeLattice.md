@@ -88,7 +88,16 @@ A curated list of awesome resources for learning and using lattice-based cryptog
 | Title                                                                 | Time      | Authors/Team        | URL                                                                                                |
 | :-------------------------------------------------------------------- | :-------- | :------------------ | :------------------------------------------------------------------------------------------------- |
 | **NIST Post-Quantum Cryptography (PQC) Standardization**                  | 2016-Present | NIST & Community    | [Link](https://csrc.nist.gov/projects/post-quantum-cryptography)                                   |
-| **HomomorphicEncryption.org Standards**                                   | Ongoing   | Community           | [Link](https://homomorphicencryption.org/standard/)                                                |
+| **HomomorphicEncryption.org Standards**                                   | Ongoing   | [Link](https://homomorphicencryption.org/standard/)                                                |
+
+## Tools
+
+| Title                                                                 | Description                                         | URL                                                |
+| :-------------------------------------------------------------------- | :-------------------------------------------------- | :------------------------------------------------- |
+| **Lattice Challenge**                                                | Challenge problems and benchmarks for lattice cryptography | [Link](https://latticechallenge.org/)             |
+| **Lattice Estimator**                                               | Tool for estimating the security of lattice-based cryptographic schemes | [Link](https://lattice-estimator.readthedocs.io/en/latest/) |
+
+
 
 ---
 

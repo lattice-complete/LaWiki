@@ -2,6 +2,7 @@
 ## A Wiki for Lattice Mathematics & Cryptography
 
 ## Log
+- 0530 update two list and tools in `awesome.md`
 - 2025-05-27
   - https://mystmd.org/guide/dropdowns-cards-and-tabs add `intro.md` for cards
 - 2025-05-26

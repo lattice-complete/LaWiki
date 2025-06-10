@@ -30,6 +30,7 @@ project:
     - file: wiki/neo.md
     - file: wiki/lantern.ipynb
     - file: wiki/LLL.ipynb
+    - file: wiki/fpylll.ipynb
     - file: wiki/LWE.ipynb
 site:
   options:

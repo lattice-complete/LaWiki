@@ -24,6 +24,8 @@ project:
     - file: wiki/folding.md
     - file: wiki/pcs.md
     - file: wiki/AwesomeLattice.md
+    - file: wiki/MLKEM.ipynb
+    - file: wiki/MLDSA.ipynb
     - file: wiki/sis.ipynb
     - file: wiki/ajtai.md
     - file: wiki/greyhound.md

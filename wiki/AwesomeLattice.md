@@ -19,6 +19,8 @@ A curated list of awesome resources for learning and using lattice-based cryptog
 |**Basic Lattice Cryptography**|2025|Vadim Lyubashevsky|[Link](https://github.com/VadimLyubash/LatticeTutorial/blob/main/tutorial.pdf)|
 |**The Mathematics of Lattice-Based Cryptography**|2025|Alfred Menezes|[Link](https://cryptography101.ca/lattice-based-cryptography/)|
 |**Kyber and Dilithium**|2024|Alfred Menezes|[Link](https://cryptography101.ca/kyber-dilithium/)|
+|**Lattices: Algorithms, Complexity, and Cryptography**|2020|Simons Institute|[Link](https://simons.berkeley.edu/programs/lattices-algorithms-complexity-cryptography)|
+|**Lattices: From Theory to Practice**|2020|Simons Institute|[Link](https://simons.berkeley.edu/workshops/lattices-theory-practice)|
 | **Lattice Cryptography Tutorial (Various Conferences)**                   | Various   | Chris Peikert       | [Example (Crypto 2011)](https://web.eecs.umich.edu/~cpeikert/pubs/lattice-tutorial.pdf)            |
 | **Introduction to Lattice-Based Cryptography (Bar-Ilan Winter School)**   | 2015      | Vadim Lyubashevsky  | [Link](https://www.vadim.lyubashevsky.org/files/billectures.pdf)                                   |
                                                                 

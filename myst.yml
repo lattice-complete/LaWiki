@@ -14,26 +14,32 @@ project:
       email: 0@kurtpan.com
   github: lattice-complete/LaWiki
   bibliography:
-    - references.bib
+    - lattice.bib
   exports:
     - format: pdf
       template: plain_latex_book
       output: exports/book.pdf
   toc:
     - file: intro.md
-    - file: wiki/folding.md
-    - file: wiki/pcs.md
     - file: wiki/AwesomeLattice.md
-    - file: wiki/MLKEM.ipynb
-    - file: wiki/MLDSA.ipynb
-    - file: wiki/sis.ipynb
-    - file: wiki/ajtai.md
-    - file: wiki/greyhound.md
-    - file: wiki/neo.md
-    - file: wiki/lantern.ipynb
-    - file: wiki/LLL.ipynb
-    - file: wiki/fpylll.ipynb
-    - file: wiki/LWE.ipynb
+    - title: Math & Assumptions
+      children:
+        - file: wiki/Math&Assumption/LWE.ipynb
+        - file: wiki/Math&Assumption/LLL.ipynb
+        - file: wiki/Math&Assumption/sis.ipynb
+    - title: Cryptography
+      children:
+        - file: wiki/Cryptography/ajtai.md
+        - file: wiki/Cryptography/folding.md
+        - file: wiki/Cryptography/greyhound.md
+        - file: wiki/Cryptography/lantern.ipynb
+        - file: wiki/Cryptography/MLDSA.ipynb
+        - file: wiki/Cryptography/MLKEM.ipynb
+        - file: wiki/Cryptography/neo.md
+        - file: wiki/Cryptography/pcs.md
+    - title: Cryptanalysis
+      children:
+        - file: wiki/Cryptanysis/fpylll.ipynb
 site:
   options:
     favicon: logo.png

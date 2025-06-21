@@ -10,17 +10,17 @@
 
 ::: {grid-item-card} 📐 Math & Assumptions
 :url: tutorials/intro
-[See Math & Assumptions »](wiki/sis.ipynb)
+[See Math & Assumptions »](wiki/Math&Assumption/sis.ipynb)
 :::
 
 ::: {grid-item-card} 📁 Folding Schemes
-:url: wiki/folding
+:url: wiki/Cryptography/folding
  
 [See the list of Folding Schemes »](wiki/folding)
 :::
 
 ::: {grid-item-card} 🔐 Polynomial Commitment Schemes
-:url: wiki/pcs
+:url: wiki/Cryptography/pcs
  
 [See the list of Polynomial Commitment Schemes »](wiki/pcs)
 :::

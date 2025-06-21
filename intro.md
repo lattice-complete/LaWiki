@@ -9,7 +9,7 @@
 :::
 
 ::: {grid-item-card} 📐 Math & Assumptions
-:url: tutorials/intro
+:url: wiki/Math&Assumption/sis
 [See Math & Assumptions »](wiki/Math&Assumption/sis.ipynb)
 :::
 

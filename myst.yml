@@ -24,6 +24,7 @@ project:
     - file: wiki/AwesomeLattice.md
     - title: Math & Assumptions
       children:
+        - file: wiki/Math&Assumption/CVP.ipynb
         - file: wiki/Math&Assumption/LWE.ipynb
         - file: wiki/Math&Assumption/LLL.ipynb
         - file: wiki/Math&Assumption/sis.ipynb
@@ -37,6 +38,7 @@ project:
         - file: wiki/Cryptography/MLKEM.ipynb
         - file: wiki/Cryptography/neo.md
         - file: wiki/Cryptography/pcs.md
+        - file: wiki/Cryptography/FHE.ipynb
     - title: Cryptanalysis
       children:
         - file: wiki/Cryptanysis/fpylll.ipynb

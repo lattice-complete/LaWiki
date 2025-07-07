@@ -275,3 +275,20 @@ location = {Santa Barbara, CA, USA}
       year = {2025},
       url = {https://eprint.iacr.org/2025/1171}
 }
+
+@inproceedings{Greyhound,
+author = {Nguyen, Ngoc Khanh and Seiler, Gregor},
+title = {Greyhound: Fast Polynomial Commitments from&nbsp;Lattices},
+year = {2024},
+isbn = {978-3-031-68402-9},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-68403-6_8},
+doi = {10.1007/978-3-031-68403-6_8},
+abstract = {In this paper, we propose Greyhound, the first concretely efficient polynomial commitment scheme from standard lattice assumptions. At the core of our construction lies a simple three-round protocol for proving evaluations for polynomials of bounded degree N with verifier time complexity O(N). By composing it with the LaBRADOR proof system (CRYPTO 2023), we obtain a succinct proof of polynomial evaluation (i.e. polylogarithmic in N) that admits a sublinear verifier runtime. To highlight practicality of Greyhound, we provide implementation details including concrete sizes and runtimes. Notably, for large polynomials of degree at most N=230, the scheme produces evaluation proofs of size 53KB, which is more than 104 times smaller than the recent lattice-based framework, called SLAP (EUROCRYPT 2024), and around three orders of magnitude smaller than Ligero (CCS 2017) and Brakedown (CRYPTO 2023).},
+booktitle = {Advances in Cryptology – CRYPTO 2024: 44th Annual International Cryptology Conference, Santa Barbara, CA, USA, August 18–22, 2024, Proceedings, Part X},
+pages = {243–275},
+numpages = {33},
+keywords = {lattices, polynomial commitment scheme, SNARK, implementation, NTT, AVX-512},
+location = {Santa Barbara, CA, USA}
+}

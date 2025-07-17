@@ -34,6 +34,7 @@ project:
         - file: wiki/Cryptography/ajtai.md
         - file: wiki/Cryptography/folding.md
         - file: wiki/Cryptography/greyhound.md
+        - file: wiki/Cryptography/greyhound-poc.ipynb
         - file: wiki/Cryptography/lantern.ipynb
         - file: wiki/Cryptography/MLDSA.ipynb
         - file: wiki/Cryptography/MLKEM.ipynb

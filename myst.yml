@@ -43,6 +43,7 @@ project:
         - file: wiki/Cryptography/FHE.ipynb
     - title: Cryptanalysis
       children:
+        - file: wiki/Cryptanysis/cryptanysis-sage-101.ipynb 
         - file: wiki/Cryptanysis/fpylll.ipynb
 site:
   options:

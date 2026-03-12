@@ -1,7 +1,14 @@
 # LaWiki
 ## A Wiki for Lattice Mathematics & Cryptography
 
+## Contributors
+
+<a href="https://github.com/lattice-complete/LaWiki/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=lattice-complete/LaWiki" />
+</a>
+
 ## Log
+- 260312 merge Yingfei's 3 notes.
 - 0530 update two list and tools in `awesome.md`
 - 2025-05-27
   - https://mystmd.org/guide/dropdowns-cards-and-tabs add `intro.md` for cards

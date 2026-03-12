@@ -36,10 +36,13 @@ project:
         - file: wiki/Cryptography/greyhound.md
         - file: wiki/Cryptography/greyhound-poc.ipynb
         - file: wiki/Cryptography/lantern.ipynb
+        - file: wiki/Cryptography/latticefold.md
+        - file: wiki/Cryptography/latticefold-plus.md
         - file: wiki/Cryptography/MLDSA.ipynb
         - file: wiki/Cryptography/MLKEM.ipynb
         - file: wiki/Cryptography/neo.md
         - file: wiki/Cryptography/pcs.md
+        - file: wiki/Cryptography/SALSAA-1.md
         - file: wiki/Cryptography/FHE.ipynb
     - title: Cryptanalysis
       children:
